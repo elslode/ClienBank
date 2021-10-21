@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/prim_back"
+    tools:context=".presentation.MainFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/credit_card"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                app:cardCornerRadius="16dp"
+                android:elevation="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:elevation="16dp"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/iv_provider_card"
+                        android:layout_width="39dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="32dp"
+                        android:src="@drawable/ic_mastercard"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/card_number"
+                        android:layout_width="217dp"
+                        android:layout_height="32dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginStart="79dp"
+                        android:layout_marginTop="28dp"
+                        android:layout_marginEnd="32dp"
+                        android:fontFamily="@font/roboto_medium"
+                        android:gravity="top"
+                        android:lineHeight="32px"
+                        android:lineSpacingExtra="6sp"
+                        android:textColor="#141414"
+                        android:textSize="22dp"
+                        android:translationY="-3.11sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="4455 1223 3488 1000" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="89dp"
+                        android:layout_marginEnd="276dp"
+                        android:layout_marginBottom="106dp"
+                        android:src="@drawable/ic_vector"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/name_of_card"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="66dp"
+                        android:layout_marginTop="92dp"
+                        android:layout_marginEnd="166dp"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/prim_gray"
+                        android:textSize="17dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="Anton Ivanov" />
+
+                    <TextView
+                        android:id="@+id/data_valid"
+                        android:layout_width="46dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="100dp"
+                        android:layout_marginEnd="22dp"
+                        android:textColor="@color/prim_gray"
+                        android:textSize="17dp"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="12/22" />
+
+                    <TextView
+                        android:id="@+id/valid"
+                        android:layout_width="45dp"
+                        android:layout_height="16dp"
+                        android:layout_marginTop="84dp"
+                        android:layout_marginEnd="22dp"
+                        android:text="@string/valid_thru"
+                        android:textSize="8dp"
+                        android:textColor="@color/prim_gray"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/balance_in_currency"
+                        android:layout_width="126dp"
+                        android:layout_height="34dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="154dp"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="28dp"
+                        android:textStyle="normal"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="£2 125,12"/>
+
+                    <TextView
+                        android:layout_width="76dp"
+                        android:layout_height="21dp"
+                        android:layout_marginTop="146dp"
+                        android:layout_marginEnd="22dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="Your balance"
+                        android:textColor="@color/prim_gray"
+                        android:textSize="13sp"
+                        android:textStyle="normal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:textSize="18dp"
+                        android:textColor="@color/text_color_black"
+                        app:layout_constraintTop_toTopOf="@id/balance_all"
+                        android:text="$"
+                        app:layout_constraintEnd_toStartOf="@id/balance_all"
+                        app:layout_constraintBottom_toBottomOf="@id/balance_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/balance_all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="22dp"
+                        android:layout_marginBottom="28dp"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="18dp"
+                        android:textStyle="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+                        android:text="2 617.14" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="157dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="294dp"
+                android:fontFamily="@font/roboto"
+                android:text="Change currency"
+                android:textColor="@color/text_color_black"
+                android:textSize="20dp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/value_card_gbp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:elevation="16dp"
+                app:cardCornerRadius="16dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/prim_blue">
+
+                    <TextView
+                        android:layout_width="18dp"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="41dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="41dp"
+                        android:layout_marginBottom="45dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="£"
+                        android:textColor="@color/white"
+                        android:textSize="30dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="34dp"
+                        android:layout_marginTop="59dp"
+                        android:layout_marginEnd="34dp"
+                        android:layout_marginBottom="17dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="GBP"
+                        android:textColor="@color/white"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/value_card_eur"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="28dp"
+                android:background="@color/white"
+                app:cardCornerRadius="16dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginEnd="130dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <FrameLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="34dp"
+                        android:layout_marginTop="59dp"
+                        android:layout_marginEnd="34dp"
+                        android:layout_marginBottom="17dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="EUR"
+                        android:textColor="@color/prim_gray"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="18dp"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="41dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="41dp"
+                        android:layout_marginBottom="45dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="€"
+                        android:textColor="@color/prim_gray"
+                        android:textSize="30dp"
+                        android:textStyle="normal" />
+
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/value_card_rub"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="16dp"
+                android:background="@color/white"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+                <FrameLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="32dp"
+                        android:layout_height="24dp"
+                        android:layout_marginStart="34dp"
+                        android:layout_marginTop="59dp"
+                        android:layout_marginEnd="34dp"
+                        android:layout_marginBottom="17dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="RUB"
+                        android:textColor="@color/prim_gray"
+                        android:textSize="16dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_marginStart="41dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_marginEnd="41dp"
+                        android:layout_marginBottom="45dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="₽"
+                        android:textColor="@color/prim_gray"
+                        android:textSize="30dp"
+                        android:textStyle="normal" />
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="264dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="16dp"
+                app:cardCornerRadius="16dp"
+                android:layout_marginBottom="64dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/value_card_eur">
+
+                <FrameLayout
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="22dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="253dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="History"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="17dp"
+                        android:gravity="top"
+                        android:layout_alignParentTop="true"
+                        android:lineSpacingExtra="2sp"
+                        android:translationY="-1.04sp"
+                        android:textStyle="normal"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_history_spend"
+                        android:layout_marginTop="42dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </FrameLayout>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
